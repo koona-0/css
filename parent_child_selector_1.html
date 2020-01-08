@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /* 부모 자손 
+                    ul 밑의 모든 li */
+            ul li{
+                color:pink;
+            }
+
+            /* 부모 자식
+                    lecture의 직계자손에게만 설정됨 */
+            #lecture>li{
+                /* border : 테두리 solid : 단선 */
+                border:1px solid purple;
+                color: skyblue;
+            }
+
+            /* ul{
+                background-color: gray;
+            }
+            ol{
+                background-color: gray;
+            } */
+            ul, ol{
+                background-color: gray;
+            }
+        </style>
+    </head>
+
+    <body>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <ol  id="lecture">
+            <li>HTML</li>
+            <li>CSS
+                <ol>
+                    <li>seletor</li>
+                    <li>declaration</li>
+                </ol>
+            </li>
+            <li>JavaScript</li>
+        </ol>
+    </body>
+</html>

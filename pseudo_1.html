@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            /* 슈도 클래스 : 마치 클래스처럼 동작해서 각각의 앨리먼트의 상태에 따라서
+                        선택자가 선택되기도 하고 안되기도 하는 것
+                        가상 선택자 */
+
+
+            /* 방문하지 않음 */
+            a:link{
+                color:gray;
+            }
+            /* 방문함 
+                보안적 문제가 있어서 visit의 속성을 모두 사용하기 어려움 일부만 사용*/
+            a:visited{
+                color:red;
+            }
+            a:hover{
+                /* hover : 마우스를 올려 놓았을 때 */
+                color:yellow;
+            }
+        /* 이 페이지의 모든 a태그 중 active되어 있는 것 가리키는 선택자 */
+            a:active{
+                /* active : 클릭했을때 */
+                color:green;
+            }
+            
+            /* 탭으로 움직일때 선택된것. 여러가지 이유로 focus는 마지막에 배치함 */
+            a:focus{
+                color:white;
+            }
+
+            /* focus기능을 사용한 기능 */
+            input:focus{
+                background-color:black;
+                color:white;
+            }
+        
+        </style>
+    </head>
+
+    <body>
+        <a href="https://github.com/koona-0">방문함</a>
+        <a href="https://a.a">방문안함</a>
+    </body>
+</html>
