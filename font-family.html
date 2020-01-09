@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #type1{
+                font-size: 5rem;
+
+                /* 사용자의 컴퓨터에 해당 폰트가 깔려있지 않으면 잘 안나옴 */
+                font-family: arial, Verdana, "Helvetica Neue", serif;
+                /* arial이 없으면 Verdana가, Verdana가 없으면 Helvetica가 나오도록 설정 */
+                /* sans-serif는 장식이 없는 폰트, serif는 장식이 있는 폰트, monospace는 고정폭 */
+                
+                font-weight: bold;
+                /* font-weight는 두껍게 */
+
+                line-height: 2;
+                /* line-height는 행간격 지정, 기본값 1.2, 간격은폰트의 1.2배만큼의 크기 */
+            }
+
+            #type2{
+                font:bold 5rem/2 arial, Verdana, "Helvetica Neue", serif;
+                /* 폰트관련 여러 속성 축약하여 표현, 순서를 지켜야함 
+                나중에 순서 궁금하면 찾아보기!*/
+
+            }
+            /* type1과 type2는 완전히 같은 의미 */
+
+        </style>
+    </head>
+
+    <body>
+        <p id="type1">
+            Hello world<br>
+            Hello world
+        </p>
+        <p id="type2">
+            Hello world<br>
+            Hello world
+        </p>
+    </body>
+</html>
