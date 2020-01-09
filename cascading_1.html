@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            li{color:red}
+            /*  li{color:red !important}
+                important는 우선순위를 가장 높게 만들어주지만 좋은 방법은 아님. 
+                우선순위를 잘 이해하고 사용하기 */
+            .classsel{color:green;}
+            #idsel{color:blue;}
+        </style>
+    </head>
+
+    <body>
+    <ul>
+        <li>html</li>
+        <li id="idsel" class="classsel" style="color:powderblue">css</li>
+        <li>javascript</li>
+    </ul>
+
+    <li>하나의 태그에 여러 디자인이 적용됐을때 웹브라우저의 우선순위</li>
+        <!-- 무엇이 더 구체적, 명시적 vs 포괄적, 일반적인가 -->
+    <ol>
+        <li>style attribute</li>
+        <li>id selector</li>
+        <li>class selector</li>
+        <li>tag selector</li>
+    </ol>
+    </body>
+</html>
