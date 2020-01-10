@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        /* 이렇게 이용 많이 함 */
+        div{
+            margin:10px;
+            width:150px;
+        }
+        /* element의 크기는 테두리 바깥크기가 아닌 흰색의 content 영역임 
+            border로 인해 크기예측이 까다로워지는 상황 발생
+            이런 문제를 해결하기위해 css에서 box-sizing 속성 등장
+            
+            box-sizing를 사용한 후
+            border의 두께가 다름에도 불구하고 border경계의 크기가 동일해짐*/
+        #small{
+            border:10px solid gray;
+        }
+        #large{
+            border:30px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <div id="small">Hello</div>
+    <div id="large">Hello</div>
+</body>
+</html>

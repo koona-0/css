@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #parent{
+            /* border:1px solid tomato; */
+            margin-top:100px;
+        }
+        /* 부모태그가 시각적으로 아무런 효과가 없는 투명상태가 되면
+            자식태그와 부모태그의 마진값이 합쳐지는 결과가 나옴 
+            
+            투명상태일 때 부모의 마진 값과 자식의 마진 값 중 
+            큰 값이 자식의 마진값이 됨
+            */
+
+        #child{
+            background-color: powderblue;
+            margin-top: 50px;;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="child">
+            Hello world
+        </div>
+    </div>
+</body>
+</html>
