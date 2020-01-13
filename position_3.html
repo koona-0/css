@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+         body{
+             padding-top:30px;
+         }
+        #other, #parent{
+            border:5px solid tomato;
+        }
+        #large{
+            height: 10000px;
+            background-color: tomato;
+        }
+        #me{
+            background-color: black;
+            color:white;
+            position: fixed;
+            left:0px;
+            top:0px;
+            width:100%;
+            height:30px;
+            text-align: center;
+            }
+            /* 스크롤과 무관하게 고정되어있음
+            fixed : 특정 엘리먼트를 화면에 그 위치에 고정시켜서 
+                스크롤로부터 완전히 독립되게 하는 것 
+
+                absolute와 상당히 비슷함
+                부모와 연 끊김
+                width height 지정 안하면 부모가 사라져서 부피 컨텐트 크기만큼으로 변함*/
+            /* 상단에 둘 경우 밑에있는것들과 겹치기 때문에 바디에 padding-top 추가 */
+    </style>
+</head>
+
+<body>
+    <div id="other">other</div>
+        <div id="parent">
+            parent
+            <div id="me">me</div>
+        </div> 
+        <div id="large">large</div>
+</body>
+</html>
