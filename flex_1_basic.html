@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .container{
+            background-color: pink;
+            height: 200px;
+            display: flex;
+            /* 플렉스를 사용할때 출발점은 반드시 부모 */
+            flex-direction: column;
+            /* flex-direction 속성
+            row(행) : 기본값, 행의 방향으로 정렬
+            row-reverse : 태그들이 반대쪽으로 가서 정렬됨 
+            column : 세로로 정렬
+            column-reverse : 세로의 반대순서로 정렬*/
+        }
+        .item{
+            background-color: tomato;
+            color:white;
+            border:1px solid white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+<!-- 아이템들이 한줄씩 표현됨 div태그는 화면 전체 사용 (블럭 레벨 엘리먼트) -->
+</body>
+</html>
