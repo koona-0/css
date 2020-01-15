@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html>
-    <!-- holiGrailLayout :  성배 레이아웃 -->
 <head>
     <style>
-        html{
+        /* html{
             height:100%;
             display: flex;
             align-items: center;
             justify-content: center;                      
-        }
-        
-        /* 헤더 섹션 푸터 세가지 태그 수평으로 보여주고 싶을 때 */
+        } */
         .container{
             display: flex;
             flex-direction: column;
@@ -24,25 +21,38 @@
             padding: 20px;
             text-align: center;
         }
-         /* 섹션아래의 네비 메인 어사이드 세개의 항목을 가로방향으로 */
          .content{
              display: flex;
          }
+         
          .content nav{
              border-right: 1px solid gray;             
          }
          .content aside{
              border-left: 1px solid gray;
          }
-         /* 성배레이아웃은 화면이 움직임에 따라 
-         크기를 줄이면 네비,광고부분 고정되고 중간의 컨텐트만 이동 */
+         @media(max-width:500px){
+             .content{
+                flex-direction: column;
+             }
+             .content nav, .content aside{
+             border-right: none;    
+             flex-basis: auto;   
+            }
+            main{
+                order:0;
+            }
+            nav{
+                order:1;
+            }
+            aside{
+                order:2;
+                display:none;
+            }
+        }
          nav, aside{
              flex-basis: 150px;
              flex-shrink: 0;
-             /* flex-basis로 nav, aside의 내부 크기 고정 */
-             /* flex-shrink로 nav, aside는 줄어드는게 없어짐
-             아이템들은 flex-shrink값이 1이기 때문에 중간 메인은 1의값 가짐
-             그래서 화면 줄이면 메인컨텐트만 화면이 줄어듦 */
          }
          main{
             text-align:justify;
@@ -74,7 +84,6 @@
         </section>
         <footer>
             <a href="https://github.com/koona-0">홈페이지</a>
-            
         </footer>
     </div>
 </body>

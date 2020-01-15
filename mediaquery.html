@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- 모바일은 화면이 작고 우리가 만드는 것은 화면이 상당히 크기 때문에
+    두가지 사이의 불일치로 인해 모바일 화면에서 이상하게 나올수있음
+    그때 아래 코드를 넣어주면 동작하는 방법을 몰라도 모바일에서 그럴듯하게 보임 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* 케스케이딩 하나의 태그를 여러 주체들이 같은 효과를 주려했을때 
+        누구에게 우선순위를 주느냐
+        이것 때문에 두 미디어 태그의 순서를 바꾸면 다르게 나타남 */
+        /* 케스케이딩의 조건이 다 같다고 하면
+        코드가 나중에 나오는것이 우선순위 높아짐
+        더 작은 구간이 우선순위가 높아질수있도록
+        아래에 배치해야함 */
+
+        
+            /* width:500px : 화면의 너비가 500px가 되었을때
+                max-width:500px : 화면의 너비가 최대 500px가 될때 까지
+                min-width:500px : 화면의 너비가 최소 500px가 넘을 때 */
+        @media (max-width:700px) {  
+                body{
+                background-color: green;
+            }
+        }
+        @media (max-width:600px) { 
+            body{
+                background-color: red;
+            }
+        }
+        @media (min-width:701px) { 
+            body{
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    ~600px : red <br>
+    601~700px :green <br>
+    701px~ : blue
+</body>
+</html>
