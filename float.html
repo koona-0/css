@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!-- float는 기본적으로 본문에 이미지를 삽입할때 사용하기 위해 고안된 기능 -->
+<html>
+<head>
+    <style>
+        img{
+            width:300px;
+            float:right;
+            margin: 20px;
+        }
+        /* 이미지를 피해서 본문이 배치된당 */
+        p{
+            border:1px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <img src="hk.jpg"art="">
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet quae adipisci accusamus, nostrum culpa fugit, illum rem doloremque quam ipsam temporibus tempora. Architecto amet fugiat, suscipit repellat quidem cupiditate ab?
+    </p>
+    <p style="clear:both;">
+        <!-- 이 속성을 주면 사진을 피해가지 않는다. (float 무시)
+            왼쪽 오른쪽 구분하여 사용 가능하지만 대체로 귀찮기 때문에 both 사용-->
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga ducimus quod eum quidem tenetur neque nulla necessitatibus iure, veritatis debitis dolores perspiciatis quaerat dolorem, a veniam quam architecto officia eveniet!
+    </p>
+</body>
+</html>
