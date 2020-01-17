@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <!-- 최근에는 flex 기능을 더 많이 사용, 세련된 디자인과 유연하게 만들 수 있음 -->
+<head>
+    <style>
+        *{
+            box-sizing: border-box;
+            /* 모든 엘리먼트에 대해서 박스의 크기를 지정할때는
+            컨텐트가 아니라 테두리를 기준으로 한다 */
+        }
+        .container{
+            width: 550;
+            border: 1px solid gray;
+            margin: auto; 
+            /* margin: auto;  왼쪽과 오른쪽의 마진 값이 공평하게 나누어지며 가운데에 위치하게 됨 
+            근데 마지막에 이거 하니까 레이아웃 이상해짐
+            다음에 알아보자*/
+        }
+
+        header{
+            border-bottom: 1px solid gray;
+        }
+        /* 밑에 있던 글씨가 이미지 태그 오른쪽에 온다는 특성을 사용해서 
+        레이아웃 만들때 플롯 많이 사용 */
+        nav{
+            float:left;
+            width: 120px;
+            border-right: 1px solid gray;
+            /* 여기에 선을 주는데 article보다 짧으면 선이 끊기고
+            그렇다고 article에 선을 주면 nav가 길어질때 선이 끊긴다
+            그러면 article과 nav 모두에 선주기
+            하지만 이렇게 주면 선이 두개가 겹치면서 두꺼워짐
+            이럴때 아티클 영역을 왼쪽으로 1px만큼 움직이면
+            두 border가 겹쳐지며 이런 현상이 사라진다 */
+        }
+        /* nav밑에있던 태그가 위로 올라옴 */
+        /* 이해하기 쉬운 표현
+        플롯은 상당히 힘이 세다
+        나머지는 플롯 눈치보다가 옆으로 감
+        아티클 영여기 눈치보지 않고 자기영역 전체 쓰게하려면?
+        아티클도 플로팅 주면 더 이상 굽신거리지않고 자기화면 전체를 쓴다 */
+        article{
+            float: left;
+            width: 300px;
+            border-left: 1px solid gray;
+            border-right: 1px solid gray;
+            margin-left:-1px;
+            /* margin-left 두개의 선을 하나로 보이게 하기위해 씀 */
+        }
+        /* 하지만 우리가 원한 결과가 나오지않고 밑으로 내려오게 됨
+        아티클의 영역이 위의 플롯 영역으로 들어갈수있을 크기로 만들어 주면 됨 */
+        aside{
+            float: left;
+            width: 120px;
+            border-left: 1px solid gray;
+            margin-left:-1px;
+        }
+        /* 여기까지 하면 footer가 위로 올라가게 된다
+        밑으로 내리려면 더이상 이 태그가 이전의 플로팅 영향을 받지 않게
+        footer부터 플로팅 효과를 지워야함 
+        새로운 줄부터 시작하게 됨*/
+        footer{
+            clear:both;
+            border-top: 1px solid gray;
+            text-align: center;
+            padding: 20px;
+        }
+        /*다하고 나니 화면의 가로를 줄이면 레이아웃이 엉망진창이 됨
+        바디의 크기가 작아지며 플롯의 특성인
+        자신이 위치할 공간이 없으면 밑으로 내려가는 특성 때문에 이런 현상 벌어짐
+        이 현상을 방지하기 위해 바디의 크기를 고정시킴
+        근데 바디 고정시키는건 이상하니까 모든태그를 감싸는 컨테이너라는 클래스를 가진 div태그를 만듦
+        컨테이너의 크기를 고정시키면 화면의 크기와 상관없이 레이아웃이 변경되는것을 방지할 수 있음*/
+        /* css는 기본적으로 너비를 따질때 테두리가 포함된 값이기 때문에
+        테두리까지 계산해줘야함 
+        그 효과가 바로 box-sizing 효과! */
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>
+                CSS
+            </h1>
+        </header>
+        <nav>
+            <ul>
+                <li>position</li>
+                <li>float</li>
+                <li>flex</li>
+            </ul>
+        </nav>
+        <article>
+            <h2>float</h2>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis ipsa voluptate optio obcaecati nulla vitae sed fuga repellat harum natus fugit eum, dolores sit, odit, quos veritatis ducimus atque tenetur perferendis cumque enim provident? Qui, temporibus deserunt omnis tempore quod quis, animi accusantium nobis quasi blanditiis facilis excepturi placeat sit!
+        </article>
+        <aside>
+            ad
+        </aside>
+        <footer>
+            copyleft
+        </footer>
+    </div> 
+</body>
+</html>
