@@ -1,0 +1,7 @@
+/* css파일 안에서도 가능 
+    @import url("") */
+
+/* 중복된 코드를 잘라 css파일에 저장 */
+h1{
+    color:lightcoral;
+}
