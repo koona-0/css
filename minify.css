@@ -1,0 +1,5 @@
+body{}
+h1{
+    color:tomato;
+}
+/* F1로 확장프로그램인 minity실행해서 경량화된 파일(~.min.css)을 html파일에 링크 시켜주기 */
