@@ -1,0 +1,14 @@
+body {
+  color: #ffc0cb;
+}
+body h1 {
+  font-size: 10px;
+  text-align: center;
+}
+
+/* 에디터 없이 컴파일 하는 방법
+명령어로 컴파일하기
+npm install stylus -g 로 설치
+stylus preprocesser.styl -o preprocesser.css 로 컴파일
+stylus -w preprocesser.styl -o preprocesser.css 는 본다는 옵션
+명령어로 하면 순차적으로 작업처리할 수 있는 기능도 있음 */
