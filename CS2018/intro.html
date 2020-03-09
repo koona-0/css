@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>컴퓨터과학과 2018 녀석들</title>
+    <link href="https://fonts.googleapis.com/css?family=Jua|Nanum+Gothic&display=swap" rel="stylesheet">
+    <style>
+    /*
+        font-family: 'Jua', sans-serif;
+        font-family: 'Nanum Gothic', sans-serif;
+    */
+    body{
+        font-family: 'Jua', sans-serif;
+            padding-top: 90px;
+            margin:0;
+            background-color: rgb(255, 165, 123);
+        }
+        .nav-container{
+            display: flex;
+            flex-direction: row;
+            width: 100%; 
+            margin:0;   /*공백 제거*/
+            padding:0;  /*공백 제거*/
+            background-color: white;
+            list-style-type: none;  /*목록 기호 제거*/
+
+            position:fixed;
+            top:0;
+            padding-left: 200px;
+
+            height: 60px;
+            padding-top: 20px;
+        }
+        .nav-item{
+            font-family: 'Jua', sans-serif;
+            padding:15px;
+            cursor: pointer;    /*마우스 커서 모양*/
+        }
+        .nav-item a{
+            color:black;
+            text-align: center;
+            text-decoration: none;  /*밑줄 제거*/
+        }
+        .nav-item a:active{
+            color:darkgray;
+            font-size: 20px;
+            }
+        .nav-item a:hover{
+            color:rgb(255, 165, 123);                                                     ;
+            font-size: 20px;
+            display: inline-block;
+            transition-property:transform all;
+            transition-duration: 0.3s;
+            }
+        .title{
+            font-size: 18px;
+            display: flex;
+            flex-direction:column;
+            position:fixed;
+            top:0;
+            
+            margin:0;   /*공백 제거*/
+            padding:0;  /*공백 제거*/
+            background-color: white;
+            list-style-type: none;  /*목록 기호 제거*/
+            
+
+            height: 60px;
+            padding-top: 10px;
+            padding-left: 20px;
+        }
+        .title-item a{
+            color:black;
+            text-align: center;
+            text-decoration: none;  /*밑줄 제거*/
+            
+        }
+        #cs a{
+            color:rgb(255, 165, 123);
+            font-size: 30px;
+            font-weight: 550;
+            padding: 3px;
+        }
+        img{
+            width: 50%;
+            padding-bottom: 20px;
+            
+        }
+        .image{
+            text-align: center;
+        }
+        footer{
+            background-color: rgb(50, 50, 50);
+            color:white;
+            font-size:13px;
+            text-align: center;
+            padding:30px;
+        }
+        .sub-title p{
+            background-color: rgb(255, 165, 123);
+            color:white;
+            font-size: 30px;
+            padding:0px;
+            margin:0px;
+            padding-left: 30px;
+        }
+        .inv-title p{
+            background-color: rgb(255, 165, 123);
+            color:rgb(255, 165, 123);
+            font-size: 30px;
+            padding:0px;
+            margin:0px;
+        }
+        p{
+            background-color: white;
+            width: 600px;
+            padding: 30px;
+            margin:30px;
+            line-height: 170%;
+            margin-top: 20px;
+            font-size: 17px;
+            
+            /* border: 1px solid #bbb; */
+            border-radius: 50px;
+        }
+        body{
+            text-align:justify;
+            column-count: 2;
+            column-width: 600px;
+            column-gap:30px;
+        }
+        article{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="nav-container">
+            <li class="nav-item"><a href="intro.html">학과 소개</a></li>
+            <li class="nav-item"><a href="friends.html">컴과 녀석들</a></li>
+            <li class="nav-item"><a href="map.html">찾아 오시는 길</a></li>
+        </ul>
+        <ul class="title">
+            <li class="title-item" id="cs" ><a href="CS2018.html">컴   과</a></li>
+            <li class="title-item"><a href="CS2018.html">18 녀석들</a></li>
+    </nav>
+    <article>
+        <div class="sub-title">
+            <p>학과 소개</p>
+        </div>
+        <p>
+            컴퓨터과학은 4차 산업혁명 시대로 이행하는데 있어 기초이자 핵심인 학문이며,
+            1984년 전자계산학과로 시작한 컴퓨터과학전공에서는 
+            소프트웨어 개발에 필요한 핵심 이론과 기술을 바탕으로
+            인공지능, 정보보안, 빅데이터, 가상현실, 사물인터넷 등의 최신 기술을 접목하여
+            다양한 산업 분야에서 활용할 수 있는 소프트웨어 기반 기술을 교육, 연구하고 있습니다. <br><br>
+            특히 컴퓨터과학전공에서는 전산학 분야의 핵심 이론과 
+            실무 소프트웨어 기술을 체계적으로 교육함으로써 
+            문제해결 능력을 배양하고 과학적 사고력과 창의력을 겸비한, 
+            21세기 최첨단 정보화 시대를 이끌어갈 
+            소프트웨어 분야의 고급 인력을 양성하는데 교육 목적을 두고 있습니다. <br><br>
+            졸업 후에는 삼성전자, NHN, 카카오 등과 같은 IT, 소프트웨어 관련 기업 및
+            공기업, 각종 정부/기업 연구소, 금융, 통신, 의료, 유통 분야, 공무원, 교사 등
+            다양한 분야로 진로를 결정할 수 있습니다.
+        </p>
+        <div class="sub-title">
+            <p>교육목표</p>
+        </div>
+        <p>
+            - 창의력과 응용력을 바탕으로 실제 문제 해결 능력을 갖춘, 
+            21세기 최첨단 정보화 시대를 이끌어갈 소프트웨어 분야의 고급 인재 양성<br><br>
+            - 인공지능, 정보보안, 가상현실, 빅데이터 등 최신 기술에 빠르게 적응하고 
+            이를 비판적, 창의적으로 활용할 수 있는 신기술 선도자 양성<br><br>
+            - IT 전문 지식과 폭넓은 소양, 학제적 역량을 갖춘 글로벌 인재 양성
+        </p>
+        <div class="inv-title">
+            <p>.</p>
+        </div>
+        <div class="inv-title">
+            <p>.</p>
+        </div>
+        <div class="inv-title">
+            <p>.</p>
+        </div>
+        <div class="sub-title">
+            <p>교육내용</p>
+        </div>
+        <p>
+            소프트웨어 개발에 필요한 핵심 기술을 교육하고 있으며, 
+            인공지능, 정보보안, 가상현실, 빅데이터, IoT, 알고리즘, 
+            운영체제, 네트워크, 프로그래밍 언어 등 
+            컴퓨터 및 정보 기술에 필요한 다방면의 지식을 교육, 연구하고 있다. <br><br>
+            이를 통해, 국제적 수준의 소프트웨어 및 정보 기술 전문가를 양성하고, 
+            전문 지식과 폭넓은 소양, 학제적 역량을 갖춘 글로벌 인재를 육성하고자 한다.
+        </p>
+        <div class="sub-title">
+            <p>졸업 후 진로</p>
+        </div>
+        <p>
+            진학 : 대학원 석사 및 박사 과정<br><br>
+            진로 :<br>
+            - 대기업(삼성, LG, SK, KT, NHN, 카카오, 엔씨소프트 등)<br>
+            - 중소기업(네오위즈, 더존, 이스트소프트(알집)<br>
+            - 공무원 및 공기업(5/7/9급 전산직 공무원, KBS, 전력공사, 수자원공사 등 공기업)<br>
+            - 정부 및 기업연구소(ETRI, KISTI, 삼성종합기술원, LG기술연구소 등 정부 및 기업 연구소)<br>
+            - 각종 기업체 전산직(은행, 증원 및 보험, 병원 등)
+        </p>
+        <div class="sub-title">
+            <p>취득자격증</p>
+        </div>
+        <p>
+            정보처리기사, 전자계산조직응용기사, 정보보호전문가 등<br>
+            네트워크 관리사, 웹프로그래머 자격 인증시험, 전자상거래 관리사 등<br>
+            각종 국제 공인 자격증(마이크로소프트, SUN, 오라클, HP, 시스코, 리눅스 등)
+        </p>
+    </article>
+    
+</body>
+</html>

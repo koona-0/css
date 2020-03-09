@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>컴퓨터과학과 2018 녀석들</title>
+    <link href="https://fonts.googleapis.com/css?family=Jua|Nanum+Gothic&display=swap" rel="stylesheet">
+    <style>
+    /*
+        font-family: 'Jua', sans-serif;
+        font-family: 'Nanum Gothic', sans-serif;
+    */
+    body{
+        font-family: 'Nanum Gothic', sans-serif;
+            padding-top: 90px;
+            margin:0;
+            background-color: rgb(255, 165, 123);
+        }
+        .title{
+            font-family: 'Jua', sans-serif;
+        }
+        .nav-container{
+            display: flex;
+            flex-direction: row;
+            width: 100%; 
+            margin:0;   /*공백 제거*/
+            padding:0;  /*공백 제거*/
+            background-color: white;
+            list-style-type: none;  /*목록 기호 제거*/
+
+            position:fixed;
+            top:0;
+            padding-left: 200px;
+
+            height: 60px;
+            padding-top: 20px;
+        }
+        .nav-item{
+            font-family: 'Jua', sans-serif;
+            padding:15px;
+            cursor: pointer;    /*마우스 커서 모양*/
+        }
+        .nav-item a{
+            color:black;
+            text-align: center;
+            text-decoration: none;  /*밑줄 제거*/
+        }
+        .nav-item a:active{
+            color:darkgray;
+            font-size: 20px;
+            }
+        .nav-item a:hover{
+            color:rgb(255, 165, 123);                                                     ;
+            font-size: 20px;
+            display: inline-block;
+            transition-property:transform all;
+            transition-duration: 0.3s;
+            }
+        .title{
+            font-size: 18px;
+            display: flex;
+            flex-direction:column;
+            position:fixed;
+            top:0;
+            
+            margin:0;   /*공백 제거*/
+            padding:0;  /*공백 제거*/
+            background-color: white;
+            list-style-type: none;  /*목록 기호 제거*/
+            
+
+            height: 60px;
+            padding-top: 10px;
+            padding-left: 20px;
+        }
+        .title-item a{
+            color:black;
+            text-align: center;
+            text-decoration: none;  /*밑줄 제거*/
+            
+        }
+        #cs a{
+            color:rgb(255, 165, 123);
+            font-size: 30px;
+            font-weight: 550;
+            padding: 3px;
+        }
+        img{
+            width: 50%;
+            padding-bottom: 20px;
+            
+        }
+        .image{
+            text-align: center;
+        }
+        footer{
+            background-color: rgb(50, 50, 50);
+            color:white;
+            font-size:13px;
+            text-align: center;
+            padding:30px;
+        }
+        p{
+            background-color: white;
+            padding: 20px;
+            margin:50px;
+        }
+        article{
+            text-align: center;
+            /* vertical-align:50%; */
+            white-space:nowrap;
+            font:0/0 a;
+        }
+        img{
+            width:700px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="nav-container">
+            <li class="nav-item"><a href="intro.html">학과 소개</a></li>
+            <li class="nav-item"><a href="friends.html">컴과 녀석들</a></li>
+            <li class="nav-item"><a href="map.html">찾아 오시는 길</a></li>
+        </ul>
+        <ul class="title">
+            <li class="title-item" id="cs"><a href="CS2018.html">컴   과</a></li>
+            <li class="title-item"><a href="CS2018.html">18 녀석들</a></li>
+    </nav>
+    <article>
+        <img src="friends.jpg">
+    </article>
+</body>
+</html>
